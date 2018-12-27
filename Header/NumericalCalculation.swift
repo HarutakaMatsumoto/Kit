@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import HMFoundation
 
 /*
  protocol Number:Integer, FloatingPoint {}
@@ -414,7 +413,7 @@ public func trapezoidalRule<T: FloatingPoint>(a: T, b: T, n: UInt, f: (T) -> T) 
     return result
 }
 
-public func simpson3<T: FloatingPoint>(a: T, b: T, n: UInt, f: (T) -> T) -> T {//シンプソン1/3公式
+public func simpson3<T: FloatingPoint>(a: T, b: T, n: UInt, f: (T) -> T) -> T {//シンプソン1/3公式 Eulerに置換？
     var result = T(0)
     let h = (b - a)/T(2*n)
     
@@ -460,13 +459,32 @@ public func definiteIntegrate<T: FloatingPoint>(from a: T, to b: T, by n: UInt, 
     return simpson3(a: a, b: b, n: n, f: f)
 }
 
-public func indefiniteIntegrate<T: FloatingPoint>(from a: T, to b: T, by n: UInt, f: (T) -> T, forEach: (T, T) -> Void) {
-    precondition(n > 2)
-    for index in 2...n {
-        let x = a + (b - a)*T(index)/T(n)
-        let y = definiteIntegrate(from: a, to: x, by: index, f: f)
-        
-        forEach(x, y)
+public func indefiniteIntegrate<T: BinaryFloatingPoint>(withInitialCondition constant: Point<T>, dx: T, function: @escaping (T) -> T) -> (T) -> T {
+    return { x in
+        let a = constant.x
+        let index = UInt((x - a)/dx)
+        return definiteIntegrate(from: a, to: x, by: index, f: function) + constant.y
+    }
+}
+
+//移動！
+public func plot<T: FloatingPoint>(between range: ClosedRange<T>, by n: UInt, function: (T) -> T) -> Matrix<T> {
+    let result = Matrix<T>()
+    result.rows.append(Vector([range.lowerBound, function(range.lowerBound)]))
+    
+    for index in 1...n {
+        let x = (range.upperBound - range.lowerBound)/T(n)*T(index)
+        result.rows.append(Vector([x, function(x)]))
+    }
+    
+    return result
+}
+//MARK: 微分
+//三点近似法
+public func differentiate<T: FloatingPoint>(ofEffectiveRange range: ClosedRange<T>, by n: UInt, function: @escaping (T) -> (T)) -> (T) -> T {
+    return {
+        let h = (range.upperBound - range.lowerBound)/T(n)
+        return (function($0 + h) - function($0 - h)) / (T(2) * h)
     }
 }
 
