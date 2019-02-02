@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import HMFoundation
 
 /*
  protocol Number:Integer, FloatingPoint {}
@@ -25,6 +26,11 @@ import Foundation
 public struct Point<T: FloatingPoint> {//Vectorに統合？
     public var x = T(0)
     public var y = T(0)
+    
+    public init(x: T, y: T) {
+        self.x = x
+        self.y = y
+    }
     
     public static func +(left: Point, right: Point) -> Point {
         return Point(x: left.x + right.x, y: left.y + right.y)
@@ -194,6 +200,7 @@ public class Matrix<Element: CustomStringConvertible>: NSObject, NSCopying {
         return result
     }
     
+    
     // MARK: CustomStringConvertible
     public override var description: String {
         return rows.map() { $0.description }.joined(separator: "\n")
@@ -209,7 +216,49 @@ public class Matrix<Element: CustomStringConvertible>: NSObject, NSCopying {
     
 }
 
-public class DataMatrix: NSObject, NSCopying {
+extension Matrix where Element == Double {
+    
+    public func readLine() {
+        
+        guard let string = Swift.readLine() else {
+            Swift.print("The standard input is noting.")
+            return
+        }
+        
+        var scanner = Scanner(string: string)
+        let setToSkip = CharacterSet.controlCharacters.union(.whitespaces)
+        scanner.charactersToBeSkipped = setToSkip
+        
+        var temporaryDouble = 0.0
+        while scanner.scanDouble(&temporaryDouble) {//最初の一行の単語数で列数を決定する
+            self.columns.append(Vector([temporaryDouble]))
+        }
+        
+        values: while let string = Swift.readLine() {//valueMatrix取得
+            scanner = Scanner(string: string)
+            let vector = Vector<Double>()
+            for _ in 0..<self.columnCount {
+                if scanner.scanDouble(&temporaryDouble) {
+                    /*if let int = Int(exactly: temporaryDouble) {
+                     column.values.append(int)
+                     } else {*/
+                    vector.scalars.append(Scalar(temporaryDouble))
+                    //}
+                } else {
+                    if string == "" {
+                        break values
+                    }
+                    Swift.print("\(string) is not numeric, so I cancel reading.")
+                    return
+                }
+            }
+            
+            self.rows.append(vector)
+        }
+    }
+}
+
+open class DataMatrix: NSObject, NSCopying {
     
     public var keyMatrix = Matrix<String>()
     public var valueMatrix = Matrix<Double>()
@@ -223,8 +272,12 @@ public class DataMatrix: NSObject, NSCopying {
     }
     
     public func readLine(keysCount: Int) {
+        precondition(keysCount >= 0)
         
-        precondition(keysCount >= 1)
+        guard keysCount >= 1 else {
+            self.valueMatrix.readLine()
+            return
+        }
         
         guard let string = Swift.readLine() else {
             Swift.print("The standard input is noting.")
@@ -292,7 +345,7 @@ public class DataMatrix: NSObject, NSCopying {
     }
     
     // MARK: CustomStringConvertible
-    public override var description: String {
+    open override var description: String {
         return keyMatrix.description + "\n" + valueMatrix.description
     }
     
@@ -404,6 +457,7 @@ public func trapezoidalRule<T: FloatingPoint>(a: T, b: T, n: UInt, f: (T) -> T) 
     let h = (b - a)/T(n)
 
     result += (f(a) + f(b))/T(2)
+    precondition(n > 1)
     for i in 1...n - 1 {
         result += f(a + T(i)*h)
     }
@@ -456,7 +510,14 @@ public func simpson8<T: FloatingPoint>(a: T, b: T, n: UInt, f: (T) -> T) -> T {/
  f: 被積分関数
  */
 public func definiteIntegrate<T: FloatingPoint>(from a: T, to b: T, by n: UInt, f: (T) -> T) -> T {
-    return simpson3(a: a, b: b, n: n, f: f)
+    switch n {
+    case 0:
+        return T(0)
+    case 1:
+        return (f(a) + f(b))/T(2)
+    default:
+        return simpson3(a: a, b: b, n: n, f: f)
+    }
 }
 
 public func indefiniteIntegrate<T: BinaryFloatingPoint>(withInitialCondition constant: Point<T>, dx: T, function: @escaping (T) -> T) -> (T) -> T {
