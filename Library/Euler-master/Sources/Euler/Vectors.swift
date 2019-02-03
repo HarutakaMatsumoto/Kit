@@ -11,7 +11,7 @@ public func ⋅ <T>(lhs: [T], rhs: [T]) -> T where T : Numeric & ExpressibleByIn
         let (a, b) = (lhs[index], rhs[index])
         product.append(a * b)
     }
-    
+
     return ∑product
 }
 
