@@ -256,6 +256,22 @@ extension Matrix where Element == Double {
             self.rows.append(vector)
         }
     }
+    
+    
+    public static func plot<T: FloatingPoint>(between range: ClosedRange<T>, by n: UInt, functions: ((T) -> T)...) -> Matrix<T> {
+        let result = Matrix<T>()
+        
+        for index in 1...n {
+            let vector = Vector<T>()
+            let x = (range.upperBound - range.lowerBound)/T(n)*T(index)
+            for function in functions {
+                vector.scalars.append(Scalar(function(x)))
+            }
+            result.rows.append(vector)
+        }
+        
+        return result
+    }
 }
 
 open class DataMatrix: NSObject, NSCopying {
@@ -528,18 +544,6 @@ public func indefiniteIntegrate<T: BinaryFloatingPoint>(withInitialCondition con
     }
 }
 
-//移動！
-public func plot<T: FloatingPoint>(between range: ClosedRange<T>, by n: UInt, function: (T) -> T) -> Matrix<T> {
-    let result = Matrix<T>()
-    result.rows.append(Vector([range.lowerBound, function(range.lowerBound)]))
-    
-    for index in 1...n {
-        let x = (range.upperBound - range.lowerBound)/T(n)*T(index)
-        result.rows.append(Vector([x, function(x)]))
-    }
-    
-    return result
-}
 //MARK: 微分
 //三点近似法
 public func differentiate<T: FloatingPoint>(ofEffectiveRange range: ClosedRange<T>, by n: UInt, function: @escaping (T) -> (T)) -> (T) -> T {
