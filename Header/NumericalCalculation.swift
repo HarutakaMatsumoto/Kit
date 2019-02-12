@@ -263,7 +263,7 @@ extension Matrix where Element == Double {
         
         for index in 1...n {
             let vector = Vector<T>()
-            let x = (range.upperBound - range.lowerBound)/T(n)*T(index)
+            let x = (range.upperBound - range.lowerBound)/T(n)*T(index) + range.lowerBound
             for function in functions {
                 vector.scalars.append(Scalar(function(x)))
             }
