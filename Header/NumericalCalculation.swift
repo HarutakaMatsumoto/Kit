@@ -41,32 +41,6 @@ public struct Point<T: FloatingPoint> {//Vectorに統合？
     }
 }
 
-public class PhysicalQuantity: NSObject {
-    enum PhysicalError<Element: BinaryFloatingPoint> {
-        case symetory(value: Element)
-        case asymetory(upperValue: Element, lowerValue: Element)
-    }
-    
-    class Unit: NSObject {
-        class UnitComponent: NSObject {
-            let baseSymbol: String
-            let prefixSymbol: String?
-            var 
-            init(baseSymbol: String, prefixSymbol: String = nil) {
-                self.baseSymbol = baseSymbol
-                self.prefixSymbol = prefixSymbol
-            }
-        }
-        
-        var unitComponents = [UnitComponent]()
-        
-    }
-    
-    var value: Double
-    var error: PhysicalError
-    var unit: Unit
-}
-
 public class Scalar<Element: CustomStringConvertible>: NSObject, NSCopying {
     public var element: Element
     
@@ -291,25 +265,15 @@ public class Matrix<Element: CustomStringConvertible>: NSObject, NSCopying {
 }
 
 extension Matrix where Element: FloatingPoint {
-    
-    
-    public static func plot(between range: ClosedRange<Element>, by n: UInt, functions: ((Element) -> Any)...) -> Matrix<Element> {
+    public static func plot(between range: ClosedRange<Element>, by n: UInt, functions: ((Element) -> Element)...) -> Matrix<Element> {
         let result = Matrix<Element>()
+        let h = (range.upperBound - range.lowerBound)/Element(n)
         
         for index in 1...n {
             let vector = Vector<Element>()
-            let x = (range.upperBound - range.lowerBound)/Element(n)*Element(index) + range.lowerBound
+            let x = h*Element(index) + range.lowerBound
             for function in functions {
-                let value = function(x)
-                switch value {
-                case let it as Element:
-                    vector.scalars.append(Scalar(it))
-                case let it as (Element, Element):
-                    vector.scalars.append(Scalar(it.0))
-                    vector.scalars.append(Scalar(it.1))
-                default:
-                    fatalError("This value:\(value) is not able to being plotted")
-                }
+                vector.scalars.append(Scalar(function(x)))
             }
             result.rows.append(vector)
         }
@@ -587,46 +551,6 @@ public func indefiniteIntegrate<T: BinaryFloatingPoint>(withInitialCondition con
         return definiteIntegrate(from: a, to: x, by: index, f: function) + constant.y
     }
 }
-
-class IndefiniteIntegrateCalculator<T: BinaryFloatingPoint>: NSObject {
-    var nowIndex = 0
-    var nowX: T
-    var nowResult: T
-    let h: T
-    let f: (T) -> (T, T)
-    init(initialX: T, initial, dx: T, function: @escaping (T) -> (T, T)) {
-        nowX = constant.x
-        nowResult = constant.y
-        h = dx
-        f = function
-    }
-    
-    public func next(x: T) -> (T, T) {
-        switch x {
-        case nowX:
-            return nowResult
-        default:
-            repeat {
-                var result = T(0)
-                let n = (x - nowX)/dx
-                
-                result += f(a) + f(b)
-                precondition(n > 1)
-                for i in 1...n - 1 {
-                    result += T(4)*f(a + (T(2*i - 1))*h)
-                    result += T(2)*f(a + T(2*i)*h)
-                }
-                result += T(4)*f(a + T(2*n - 1)*h)
-                
-                result *= h
-                result /= T(3)
-                
-                return result
-            }
-        }
-    }
-}
-
 
 //MARK: 微分
 //三点近似法
