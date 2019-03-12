@@ -7,196 +7,196 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05D4AAAD22058C7800C83620 /* Mesurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4AAAC22058C7800C83620 /* Mesurement.swift */; };
-		5A025CEC218E8CEB00397D33 /* Science.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A025CE2218E8CEB00397D33 /* Science.framework */; };
-		5A025CF1218E8CEB00397D33 /* ScienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A025CF0218E8CEB00397D33 /* ScienceTests.swift */; };
-		5A025CF3218E8CEB00397D33 /* Science.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A025CE5218E8CEB00397D33 /* Science.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A025CFD218E8D3A00397D33 /* Euler in Resources */ = {isa = PBXBuildFile; fileRef = 5A025CFC218E8D3A00397D33 /* Euler */; };
+		05D4AA8922057DF200C83620 /* NumericalCalculation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D4AA7F22057DEF00C83620 /* NumericalCalculation.framework */; };
+		05D4AA8E22057DF200C83620 /* NumericalCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4AA8D22057DF200C83620 /* NumericalCalculationTests.swift */; };
+		05D4AA9022057DF200C83620 /* NumericalCalculation.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D4AA8222057DEF00C83620 /* NumericalCalculation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05D4AA9A22057EB100C83620 /* NumericalCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4AA9922057EB100C83620 /* NumericalCalculation.swift */; };
+		05D4AAA6220584EC00C83620 /* HMFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D4AAA5220584EC00C83620 /* HMFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5A025CED218E8CEB00397D33 /* PBXContainerItemProxy */ = {
+		05D4AA8A22057DF200C83620 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5A025CD9218E8CEB00397D33 /* Project object */;
+			containerPortal = 05D4AA7622057DEF00C83620 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5A025CE1218E8CEB00397D33;
-			remoteInfo = Science;
+			remoteGlobalIDString = 05D4AA7E22057DEF00C83620;
+			remoteInfo = NumericalCalculation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05D4AAAC22058C7800C83620 /* Mesurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mesurement.swift; path = Science/Harutaka/Mesurement.swift; sourceTree = SOURCE_ROOT; };
-		5A025CE2218E8CEB00397D33 /* Science.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Science.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A025CE5218E8CEB00397D33 /* Science.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Science.h; sourceTree = "<group>"; };
-		5A025CE6218E8CEB00397D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A025CEB218E8CEB00397D33 /* ScienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScienceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A025CF0218E8CEB00397D33 /* ScienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceTests.swift; sourceTree = "<group>"; };
-		5A025CF2218E8CEB00397D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A025CFC218E8D3A00397D33 /* Euler */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Euler; path = "../../Euler-master/Sources/Euler"; sourceTree = "<group>"; };
+		05D4AA7F22057DEF00C83620 /* NumericalCalculation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NumericalCalculation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D4AA8222057DEF00C83620 /* NumericalCalculation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericalCalculation.h; sourceTree = "<group>"; };
+		05D4AA8322057DEF00C83620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D4AA8822057DF200C83620 /* NumericalCalculationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumericalCalculationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D4AA8D22057DF200C83620 /* NumericalCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalCalculationTests.swift; sourceTree = "<group>"; };
+		05D4AA8F22057DF200C83620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05D4AA9922057EB100C83620 /* NumericalCalculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumericalCalculation.swift; path = ../../../Header/NumericalCalculation.swift; sourceTree = "<group>"; };
+		05D4AAA5220584EC00C83620 /* HMFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HMFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A025CDF218E8CEB00397D33 /* Frameworks */ = {
+		05D4AA7C22057DEF00C83620 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D4AAA6220584EC00C83620 /* HMFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A025CE8218E8CEB00397D33 /* Frameworks */ = {
+		05D4AA8522057DF200C83620 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A025CEC218E8CEB00397D33 /* Science.framework in Frameworks */,
+				05D4AA8922057DF200C83620 /* NumericalCalculation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05D4AAAF220591A200C83620 /* Harutaka */ = {
+		05D4AA7522057DEF00C83620 = {
 			isa = PBXGroup;
 			children = (
-				05D4AAAC22058C7800C83620 /* Mesurement.swift */,
-			);
-			path = Harutaka;
-			sourceTree = "<group>";
-		};
-		5A025CD8218E8CEB00397D33 = {
-			isa = PBXGroup;
-			children = (
-				5A025CE4218E8CEB00397D33 /* Science */,
-				5A025CEF218E8CEB00397D33 /* ScienceTests */,
-				5A025CE3218E8CEB00397D33 /* Products */,
+				05D4AA8122057DEF00C83620 /* NumericalCalculation */,
+				05D4AA8C22057DF200C83620 /* NumericalCalculationTests */,
+				05D4AA8022057DEF00C83620 /* Products */,
+				05D4AAA4220584EC00C83620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		5A025CE3218E8CEB00397D33 /* Products */ = {
+		05D4AA8022057DEF00C83620 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A025CE2218E8CEB00397D33 /* Science.framework */,
-				5A025CEB218E8CEB00397D33 /* ScienceTests.xctest */,
+				05D4AA7F22057DEF00C83620 /* NumericalCalculation.framework */,
+				05D4AA8822057DF200C83620 /* NumericalCalculationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A025CE4218E8CEB00397D33 /* Science */ = {
+		05D4AA8122057DEF00C83620 /* NumericalCalculation */ = {
 			isa = PBXGroup;
 			children = (
-				5A025CFC218E8D3A00397D33 /* Euler */,
-				05D4AAAF220591A200C83620 /* Harutaka */,
-				5A025CE5218E8CEB00397D33 /* Science.h */,
-				5A025CE6218E8CEB00397D33 /* Info.plist */,
+				05D4AA8222057DEF00C83620 /* NumericalCalculation.h */,
+				05D4AA9922057EB100C83620 /* NumericalCalculation.swift */,
+				05D4AA8322057DEF00C83620 /* Info.plist */,
 			);
-			path = Science;
+			path = NumericalCalculation;
 			sourceTree = "<group>";
 		};
-		5A025CEF218E8CEB00397D33 /* ScienceTests */ = {
+		05D4AA8C22057DF200C83620 /* NumericalCalculationTests */ = {
 			isa = PBXGroup;
 			children = (
-				5A025CF0218E8CEB00397D33 /* ScienceTests.swift */,
-				5A025CF2218E8CEB00397D33 /* Info.plist */,
+				05D4AA8D22057DF200C83620 /* NumericalCalculationTests.swift */,
+				05D4AA8F22057DF200C83620 /* Info.plist */,
 			);
-			path = ScienceTests;
+			path = NumericalCalculationTests;
+			sourceTree = "<group>";
+		};
+		05D4AAA4220584EC00C83620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05D4AAA5220584EC00C83620 /* HMFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5A025CDD218E8CEB00397D33 /* Headers */ = {
+		05D4AA7A22057DEF00C83620 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A025CF3218E8CEB00397D33 /* Science.h in Headers */,
+				05D4AA9022057DF200C83620 /* NumericalCalculation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5A025CE1218E8CEB00397D33 /* Science */ = {
+		05D4AA7E22057DEF00C83620 /* NumericalCalculation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A025CF6218E8CEB00397D33 /* Build configuration list for PBXNativeTarget "Science" */;
+			buildConfigurationList = 05D4AA9322057DF200C83620 /* Build configuration list for PBXNativeTarget "NumericalCalculation" */;
 			buildPhases = (
-				5A025CDD218E8CEB00397D33 /* Headers */,
-				5A025CDE218E8CEB00397D33 /* Sources */,
-				5A025CDF218E8CEB00397D33 /* Frameworks */,
-				5A025CE0218E8CEB00397D33 /* Resources */,
+				05D4AA7A22057DEF00C83620 /* Headers */,
+				05D4AA7B22057DEF00C83620 /* Sources */,
+				05D4AA7C22057DEF00C83620 /* Frameworks */,
+				05D4AA7D22057DEF00C83620 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Science;
-			productName = Science;
-			productReference = 5A025CE2218E8CEB00397D33 /* Science.framework */;
+			name = NumericalCalculation;
+			productName = NumericalCalculation;
+			productReference = 05D4AA7F22057DEF00C83620 /* NumericalCalculation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5A025CEA218E8CEB00397D33 /* ScienceTests */ = {
+		05D4AA8722057DF200C83620 /* NumericalCalculationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A025CF9218E8CEB00397D33 /* Build configuration list for PBXNativeTarget "ScienceTests" */;
+			buildConfigurationList = 05D4AA9622057DF200C83620 /* Build configuration list for PBXNativeTarget "NumericalCalculationTests" */;
 			buildPhases = (
-				5A025CE7218E8CEB00397D33 /* Sources */,
-				5A025CE8218E8CEB00397D33 /* Frameworks */,
-				5A025CE9218E8CEB00397D33 /* Resources */,
+				05D4AA8422057DF200C83620 /* Sources */,
+				05D4AA8522057DF200C83620 /* Frameworks */,
+				05D4AA8622057DF200C83620 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5A025CEE218E8CEB00397D33 /* PBXTargetDependency */,
+				05D4AA8B22057DF200C83620 /* PBXTargetDependency */,
 			);
-			name = ScienceTests;
-			productName = ScienceTests;
-			productReference = 5A025CEB218E8CEB00397D33 /* ScienceTests.xctest */;
+			name = NumericalCalculationTests;
+			productName = NumericalCalculationTests;
+			productReference = 05D4AA8822057DF200C83620 /* NumericalCalculationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5A025CD9218E8CEB00397D33 /* Project object */ = {
+		05D4AA7622057DEF00C83620 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "松本青空";
+				ORGANIZATIONNAME = HarutakaMatsumoto;
 				TargetAttributes = {
-					5A025CE1218E8CEB00397D33 = {
+					05D4AA7E22057DEF00C83620 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
-					5A025CEA218E8CEB00397D33 = {
+					05D4AA8722057DF200C83620 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 5A025CDC218E8CEB00397D33 /* Build configuration list for PBXProject "Science" */;
+			buildConfigurationList = 05D4AA7922057DEF00C83620 /* Build configuration list for PBXProject "NumericalCalculation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 5A025CD8218E8CEB00397D33;
-			productRefGroup = 5A025CE3218E8CEB00397D33 /* Products */;
+			mainGroup = 05D4AA7522057DEF00C83620;
+			productRefGroup = 05D4AA8022057DEF00C83620 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A025CE1218E8CEB00397D33 /* Science */,
-				5A025CEA218E8CEB00397D33 /* ScienceTests */,
+				05D4AA7E22057DEF00C83620 /* NumericalCalculation */,
+				05D4AA8722057DF200C83620 /* NumericalCalculationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5A025CE0218E8CEB00397D33 /* Resources */ = {
+		05D4AA7D22057DEF00C83620 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A025CFD218E8D3A00397D33 /* Euler in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A025CE9218E8CEB00397D33 /* Resources */ = {
+		05D4AA8622057DF200C83620 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,34 +206,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5A025CDE218E8CEB00397D33 /* Sources */ = {
+		05D4AA7B22057DEF00C83620 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D4AAAD22058C7800C83620 /* Mesurement.swift in Sources */,
+				05D4AA9A22057EB100C83620 /* NumericalCalculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A025CE7218E8CEB00397D33 /* Sources */ = {
+		05D4AA8422057DF200C83620 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A025CF1218E8CEB00397D33 /* ScienceTests.swift in Sources */,
+				05D4AA8E22057DF200C83620 /* NumericalCalculationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5A025CEE218E8CEB00397D33 /* PBXTargetDependency */ = {
+		05D4AA8B22057DF200C83620 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5A025CE1218E8CEB00397D33 /* Science */;
-			targetProxy = 5A025CED218E8CEB00397D33 /* PBXContainerItemProxy */;
+			target = 05D4AA7E22057DEF00C83620 /* NumericalCalculation */;
+			targetProxy = 05D4AA8A22057DF200C83620 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5A025CF4218E8CEB00397D33 /* Debug */ = {
+		05D4AA9122057DF200C83620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		5A025CF5218E8CEB00397D33 /* Release */ = {
+		05D4AA9222057DF200C83620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,7 +354,7 @@
 			};
 			name = Release;
 		};
-		5A025CF7218E8CEB00397D33 /* Debug */ = {
+		05D4AA9422057DF200C83620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -367,14 +367,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Science/Info.plist;
+				INFOPLIST_FILE = NumericalCalculation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kalfes.Science;
+				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.NumericalCalculation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -382,7 +382,7 @@
 			};
 			name = Debug;
 		};
-		5A025CF8218E8CEB00397D33 /* Release */ = {
+		05D4AA9522057DF200C83620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -395,53 +395,53 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Science/Info.plist;
+				INFOPLIST_FILE = NumericalCalculation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kalfes.Science;
+				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.NumericalCalculation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
-		5A025CFA218E8CEB00397D33 /* Debug */ = {
+		05D4AA9722057DF200C83620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AF99T5686V;
-				INFOPLIST_FILE = ScienceTests/Info.plist;
+				INFOPLIST_FILE = NumericalCalculationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kalfes.ScienceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.NumericalCalculationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
-		5A025CFB218E8CEB00397D33 /* Release */ = {
+		05D4AA9822057DF200C83620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AF99T5686V;
-				INFOPLIST_FILE = ScienceTests/Info.plist;
+				INFOPLIST_FILE = NumericalCalculationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kalfes.ScienceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.NumericalCalculationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -450,34 +450,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A025CDC218E8CEB00397D33 /* Build configuration list for PBXProject "Science" */ = {
+		05D4AA7922057DEF00C83620 /* Build configuration list for PBXProject "NumericalCalculation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A025CF4218E8CEB00397D33 /* Debug */,
-				5A025CF5218E8CEB00397D33 /* Release */,
+				05D4AA9122057DF200C83620 /* Debug */,
+				05D4AA9222057DF200C83620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A025CF6218E8CEB00397D33 /* Build configuration list for PBXNativeTarget "Science" */ = {
+		05D4AA9322057DF200C83620 /* Build configuration list for PBXNativeTarget "NumericalCalculation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A025CF7218E8CEB00397D33 /* Debug */,
-				5A025CF8218E8CEB00397D33 /* Release */,
+				05D4AA9422057DF200C83620 /* Debug */,
+				05D4AA9522057DF200C83620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A025CF9218E8CEB00397D33 /* Build configuration list for PBXNativeTarget "ScienceTests" */ = {
+		05D4AA9622057DF200C83620 /* Build configuration list for PBXNativeTarget "NumericalCalculationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A025CFA218E8CEB00397D33 /* Debug */,
-				5A025CFB218E8CEB00397D33 /* Release */,
+				05D4AA9722057DF200C83620 /* Debug */,
+				05D4AA9822057DF200C83620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5A025CD9218E8CEB00397D33 /* Project object */;
+	rootObject = 05D4AA7622057DEF00C83620 /* Project object */;
 }
