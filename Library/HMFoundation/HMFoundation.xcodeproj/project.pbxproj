@@ -151,10 +151,11 @@
 				TargetAttributes = {
 					05D4AA5622056A9C00C83620 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					05D4AA5F22056A9C00C83620 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -164,6 +165,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 05D4AA4D22056A9C00C83620;
 			productRefGroup = 05D4AA5822056A9C00C83620 /* Products */;
@@ -366,7 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -393,7 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.HMFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -412,7 +414,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.HMFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -431,7 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.HMFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -8,7 +8,7 @@
 import Foundation
 
 public extension CustomStringConvertible {
-    public func printed() -> Self {
+    func printed() -> Self {
         print(self)
         return self
     }
@@ -50,29 +50,29 @@ public enum Place: Int {
 }
 
 public extension Array {
-    public func chooseRandom() -> Element {
+    func chooseRandom() -> Element {
         return self[Int(arc4random_uniform(UInt32(self.count)))]
     }
 }
 
 public extension ArraySlice {
-    public func chooseRandom() -> Element {
+    func chooseRandom() -> Element {
         return self[Int(arc4random_uniform(UInt32(self.count)))]
     }
     
-    public func independentized() -> Array<Element> {
+    func independentized() -> Array<Element> {
         return self.map { $0 }
     }
 }
 
 public extension Character {
-    public var isHiragana: Bool {
+    var isHiragana: Bool {
         return 0x3040...0x309f ~= self.unicodeScalars.first!.value//なんか汚い
     }
 }
 
 public extension StringProtocol {
-    public var katakanalized: String {
+    var katakanalized: String {
         let mapped = self.map { (character: Character) -> String in
             if character.isHiragana {
                 return String(UnicodeScalar(character.unicodeScalars.first!.value + UInt32(0x30a0 - 0x3040))!)
@@ -101,7 +101,7 @@ public protocol Powerable {
 }
 
 public extension Powerable {
-    public static func **= (lhs: inout Self, rhs: Self) {
+    static func **= (lhs: inout Self, rhs: Self) {
         lhs = lhs ** rhs
     }
 }
