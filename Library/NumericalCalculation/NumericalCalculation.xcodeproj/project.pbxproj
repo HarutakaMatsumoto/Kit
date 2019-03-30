@@ -11,7 +11,7 @@
 		05D4AA8E22057DF200C83620 /* NumericalCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4AA8D22057DF200C83620 /* NumericalCalculationTests.swift */; };
 		05D4AA9022057DF200C83620 /* NumericalCalculation.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D4AA8222057DEF00C83620 /* NumericalCalculation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D4AA9A22057EB100C83620 /* NumericalCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4AA9922057EB100C83620 /* NumericalCalculation.swift */; };
-		05D4AAA6220584EC00C83620 /* HMFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D4AAA5220584EC00C83620 /* HMFoundation.framework */; };
+		05D92CF22242318E00C62899 /* HMFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D4AAA5220584EC00C83620 /* HMFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D4AAA6220584EC00C83620 /* HMFoundation.framework in Frameworks */,
+				05D92CF22242318E00C62899 /* HMFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,10 +163,11 @@
 				TargetAttributes = {
 					05D4AA7E22057DEF00C83620 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					05D4AA8722057DF200C83620 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -176,6 +177,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 05D4AA7522057DEF00C83620;
 			productRefGroup = 05D4AA8022057DEF00C83620 /* Products */;
@@ -378,7 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -405,7 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.NumericalCalculation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -424,7 +426,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.NumericalCalculationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -443,7 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HarutakaMatsumoto.NumericalCalculationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -110,10 +110,6 @@ extension Double: Powerable {
     public static func ** (radix: Double, power: Double) -> Double {
         return pow(radix,power)
     }
-    
-    public static func random() -> Double {//0<=x<=1?
-        return Double(arc4random())/Double(UInt32.max)
-    }
 }
 
 extension Int: Powerable {
@@ -124,6 +120,18 @@ extension Int: Powerable {
         }
         
         return result
+    }
+}
+
+extension Float: Powerable {
+    public static func ** (radix: Float, power: Float) -> Float {
+        return pow(radix,power)
+    }
+}
+
+extension Float80: Powerable {
+    public static func ** (radix: Float80, power: Float80) -> Float80 {
+        return pow(radix,power)
     }
 }
 

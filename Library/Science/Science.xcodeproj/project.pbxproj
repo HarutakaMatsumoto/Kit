@@ -12,6 +12,7 @@
 		5A025CF1218E8CEB00397D33 /* ScienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A025CF0218E8CEB00397D33 /* ScienceTests.swift */; };
 		5A025CF3218E8CEB00397D33 /* Science.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A025CE5218E8CEB00397D33 /* Science.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A025CFD218E8D3A00397D33 /* Euler in Resources */ = {isa = PBXBuildFile; fileRef = 5A025CFC218E8D3A00397D33 /* Euler */; };
+		5A7255392249C2FF000B1ECB /* HMFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7255382249C2FF000B1ECB /* HMFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		5A025CF0218E8CEB00397D33 /* ScienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceTests.swift; sourceTree = "<group>"; };
 		5A025CF2218E8CEB00397D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A025CFC218E8D3A00397D33 /* Euler */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Euler; path = "../../Euler-master/Sources/Euler"; sourceTree = "<group>"; };
+		5A7255382249C2FF000B1ECB /* HMFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HMFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7255392249C2FF000B1ECB /* HMFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 				5A025CE4218E8CEB00397D33 /* Science */,
 				5A025CEF218E8CEB00397D33 /* ScienceTests */,
 				5A025CE3218E8CEB00397D33 /* Products */,
+				5A7255372249C2FF000B1ECB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +102,14 @@
 				5A025CF2218E8CEB00397D33 /* Info.plist */,
 			);
 			path = ScienceTests;
+			sourceTree = "<group>";
+		};
+		5A7255372249C2FF000B1ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A7255382249C2FF000B1ECB /* HMFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +174,11 @@
 				TargetAttributes = {
 					5A025CE1218E8CEB00397D33 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					5A025CEA218E8CEB00397D33 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -175,6 +188,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5A025CD8218E8CEB00397D33;
 			productRefGroup = 5A025CE3218E8CEB00397D33 /* Products */;
@@ -378,7 +392,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -405,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kalfes.Science;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -424,7 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kalfes.ScienceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -443,7 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kalfes.ScienceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
