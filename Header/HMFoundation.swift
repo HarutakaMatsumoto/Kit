@@ -129,11 +129,13 @@ extension Float: Powerable {
     }
 }
 
+#if os(macOS)
 extension Float80: Powerable {
     public static func ** (radix: Float80, power: Float80) -> Float80 {
         return pow(radix,power)
     }
 }
+#endif
 
 public extension Array {
     func printEach() {
