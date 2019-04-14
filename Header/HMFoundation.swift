@@ -49,16 +49,7 @@ public enum Place: Int {
     case previous,center,upperRight,up,upperLeft,Left,lowerLeft,low,lowerRight,inner,next
 }
 
-public extension Array {
-    func chooseRandom() -> Element {
-        return self[Int(arc4random_uniform(UInt32(self.count)))]
-    }
-}
-
 public extension ArraySlice {
-    func chooseRandom() -> Element {
-        return self[Int(arc4random_uniform(UInt32(self.count)))]
-    }
     
     func independentized() -> Array<Element> {
         return self.map { $0 }
