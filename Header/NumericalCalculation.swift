@@ -803,15 +803,41 @@ public func vonNeumannRejectionMethod(x1: Double, x2: Double, fMax: Double, f: (
     var x = 0.0, y = 0.0
     
     repeat {
-        x = Double.random()*(x2 - x1)
-        y = Double.random()*fMax
+        x = Double.random(in: 0.0...1.0)*(x2 - x1)
+        y = Double.random(in: 0.0...1.0)*fMax
     } while y > f(x)
     
     return x
 }
 
 public func inverseTransformSampling(G: (Double) -> Double) -> Double {
-    return G(Double.random())
+    return G(Double.random(in: 0.0...1.0))
+}
+
+//RandomNumberGenerator化
+
+public class InverseTransformSamplingRandomNumberGenerator<U: BinaryFloatingPoint>: RandomNumberGenerator where U.RawSignificand: FixedWidthInteger {
+    
+    let function: (U) -> U
+    let primitiveFunction: (U) -> U
+    
+    public init(function: @escaping (U) -> U, primitiveFunction: @escaping (U) -> U) {
+        self.function = function
+        self.primitiveFunction = primitiveFunction
+    }
+    
+    public func next<T>() -> T where T : FixedWidthInteger, T : UnsignedInteger {
+        return T.init(U.random(in: 0.0...function(U(T.max))))
+    }
+    
+}
+
+public class LogarithmicRandomNumberGenerator: InverseTransformSamplingRandomNumberGenerator<Double> {
+    
+    public init() {
+        super.init(function: exp, primitiveFunction: exp)
+    }
+    
 }
 
 
