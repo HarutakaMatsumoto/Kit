@@ -184,6 +184,24 @@ public func system(_ body: String) throws {
 }
 #endif
 
+public extension Bundle {
+    func getValueFromLocalizedOrNormalInfoDictionary<T>(ofKey key: String, as type: T.Type) -> T? {
+        if let it = localizedInfoDictionary {
+            if let value = it[key] {
+                return value as? T
+            }
+        }
+        
+        if let it = infoDictionary {
+            if let value = it[key] {
+                return value as? T
+            }
+        }
+        
+        return nil
+    }
+}
+
 /************************************************Type Precedence***************************************************/
 /*
 protocol Ordered {}
