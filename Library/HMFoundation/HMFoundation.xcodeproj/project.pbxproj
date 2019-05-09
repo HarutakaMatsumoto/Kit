@@ -30,7 +30,7 @@
 		05D4AA6022056A9C00C83620 /* HMFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D4AA6522056A9C00C83620 /* HMFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFoundationTests.swift; sourceTree = "<group>"; };
 		05D4AA6722056A9C00C83620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05D4AA7122056AF500C83620 /* HMFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMFoundation.swift; path = ../../../Header/HMFoundation.swift; sourceTree = "<group>"; };
+		05D4AA7122056AF500C83620 /* HMFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMFoundation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
