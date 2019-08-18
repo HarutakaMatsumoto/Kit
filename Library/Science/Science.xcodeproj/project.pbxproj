@@ -11,7 +11,6 @@
 		5A025CEC218E8CEB00397D33 /* Science.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A025CE2218E8CEB00397D33 /* Science.framework */; };
 		5A025CF1218E8CEB00397D33 /* ScienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A025CF0218E8CEB00397D33 /* ScienceTests.swift */; };
 		5A025CF3218E8CEB00397D33 /* Science.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A025CE5218E8CEB00397D33 /* Science.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A025CFD218E8D3A00397D33 /* Euler in Resources */ = {isa = PBXBuildFile; fileRef = 5A025CFC218E8D3A00397D33 /* Euler */; };
 		5A7255392249C2FF000B1ECB /* HMFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7255382249C2FF000B1ECB /* HMFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,14 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05D4AAAC22058C7800C83620 /* Mesurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mesurement.swift; path = Science/Harutaka/Mesurement.swift; sourceTree = SOURCE_ROOT; };
+		05D4AAAC22058C7800C83620 /* Mesurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mesurement.swift; path = Science/Mesurement.swift; sourceTree = SOURCE_ROOT; };
 		5A025CE2218E8CEB00397D33 /* Science.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Science.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A025CE5218E8CEB00397D33 /* Science.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Science.h; sourceTree = "<group>"; };
 		5A025CE6218E8CEB00397D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A025CEB218E8CEB00397D33 /* ScienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScienceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A025CF0218E8CEB00397D33 /* ScienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceTests.swift; sourceTree = "<group>"; };
 		5A025CF2218E8CEB00397D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A025CFC218E8D3A00397D33 /* Euler */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Euler; path = "../../Euler-master/Sources/Euler"; sourceTree = "<group>"; };
 		5A7255382249C2FF000B1ECB /* HMFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HMFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,14 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05D4AAAF220591A200C83620 /* Harutaka */ = {
-			isa = PBXGroup;
-			children = (
-				05D4AAAC22058C7800C83620 /* Mesurement.swift */,
-			);
-			path = Harutaka;
-			sourceTree = "<group>";
-		};
 		5A025CD8218E8CEB00397D33 = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +77,7 @@
 		5A025CE4218E8CEB00397D33 /* Science */ = {
 			isa = PBXGroup;
 			children = (
-				5A025CFC218E8D3A00397D33 /* Euler */,
-				05D4AAAF220591A200C83620 /* Harutaka */,
+				05D4AAAC22058C7800C83620 /* Mesurement.swift */,
 				5A025CE5218E8CEB00397D33 /* Science.h */,
 				5A025CE6218E8CEB00397D33 /* Info.plist */,
 			);
@@ -206,7 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A025CFD218E8D3A00397D33 /* Euler in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
