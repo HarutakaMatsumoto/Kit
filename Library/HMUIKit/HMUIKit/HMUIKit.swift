@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import HMFoundationForiOS
 
 extension CGFloat: Powerable {
     static func ** (radix: Double, power: CGFloat) -> CGFloat {
@@ -413,3 +412,32 @@ extension UIScrollView {
     }
 }
 
+// MARK: - From https://github.com/gopalkrishnareddy/RemoveUndoRedoOptions/blob/master/RemoveSuggestions/RemoveSuggestions/ViewController.swift
+@available(iOS 9.0, *)
+public extension UITextView {
+    func hideSuggestions() {
+        // Removes suggestions only
+        autocorrectionType = .no
+        //Removes Undo, Redo, Copy & Paste options
+        removeUndoRedoOptions()
+    }
+}
+
+@available(iOS 9.0, *)
+public extension UITextField {
+    func hideSuggestions() {
+        // Removes suggestions only
+        autocorrectionType = .no
+        //Removes Undo, Redo, Copy & Paste options
+        removeUndoRedoOptions()
+    }
+}
+
+@available(iOS 9.0, *)
+public extension UIResponder {
+    func removeUndoRedoOptions() {
+        //Removes Undo, Redo, Copy & Paste options
+        inputAssistantItem.leadingBarButtonGroups = []
+        inputAssistantItem.trailingBarButtonGroups = []
+    }
+}
