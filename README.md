@@ -17,3 +17,7 @@ Unfortunately, this doesn't support tensor calculus yet.
 ## Science
 As its name says, this (will) supports scientific processes like calculation of physical quantities and handling significant figures.
 Unfortunately, this support it in very nallow resion.
+
+## ClusterOfGalaxies
+As its name says, this supports calculation of mass profile.
+This input is from xspec.
