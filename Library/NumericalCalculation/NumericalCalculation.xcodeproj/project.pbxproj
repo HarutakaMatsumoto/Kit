@@ -31,7 +31,7 @@
 		05D4AA8822057DF200C83620 /* NumericalCalculationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumericalCalculationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D4AA8D22057DF200C83620 /* NumericalCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalCalculationTests.swift; sourceTree = "<group>"; };
 		05D4AA8F22057DF200C83620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05D4AA9922057EB100C83620 /* NumericalCalculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumericalCalculation.swift; path = "../../../../../../../../../../../../System/Volumes/Data/Users/stlab06/Library/CloudStorage/iCloud Drive/Documents/プログラミング/Swift/Kit/Library/NumericalCalculation/NumericalCalculation/NumericalCalculation.swift"; sourceTree = "<group>"; };
+		05D4AA9922057EB100C83620 /* NumericalCalculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericalCalculation.swift; sourceTree = "<group>"; };
 		05D4AAA5220584EC00C83620 /* HMFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HMFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
